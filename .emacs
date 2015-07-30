@@ -7,7 +7,7 @@
 (global-set-key (kbd "C-<f6>") 'comment-region)
 (global-set-key (kbd "C-<f7>") 'uncomment-region)
 
-;; (global-auto-revert-mode 1)
+(global-auto-revert-mode 1)
 
 (global-linum-mode t)
 (setq linum-format "%d ")
