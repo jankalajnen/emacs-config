@@ -1,12 +1,13 @@
 (add-to-list 'load-path "~/.emacs.d/themes/")
 (load "dark-krystal-theme")
 
-(global-set-key (kbd "C-<f5>") (lambda () (interactive) (revert-buffer t t t) (message "BUFFER IS REVERTED")))
 (global-set-key (kbd "C-<f8>") (lambda () (interactive) (whitespace-cleanup) (message "WHITESPACE CLEANUP")))
 (global-set-key (kbd "M-[ h") 'beginning-of-line)
 (global-set-key (kbd "M-[ f") 'end-of-line)
 (global-set-key (kbd "C-<f6>") 'comment-region)
 (global-set-key (kbd "C-<f7>") 'uncomment-region)
+
+(global-auto-revert-mode 1)
 
 (global-linum-mode t)
 (setq linum-format "%d ")
