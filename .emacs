@@ -24,7 +24,7 @@
 (add-hook 'perl-mode-hook       'hs-minor-mode)
 (add-hook 'sh-mode-hook         'hs-minor-mode)
 
-(add-hook 'hs-minor-mode-hook '(lambda () (hs-hide-all)))
+;; (add-hook 'hs-minor-mode-hook '(lambda () (hs-hide-all)))
 
 (load "auctex.el" nil t t)
 (load "preview-latex.el" nil t t)
