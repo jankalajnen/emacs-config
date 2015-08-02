@@ -6,6 +6,8 @@
 (global-set-key (kbd "M-[ f") 'end-of-line)
 (global-set-key (kbd "C-<f6>") 'comment-region)
 (global-set-key (kbd "C-<f7>") 'uncomment-region)
+(global-set-key (kbd "C-M-[") 'hs-hide-block)
+(global-set-key (kbd "C-M-]") 'hs-show-block)
 
 (global-auto-revert-mode 1)
 
