@@ -1,6 +1,9 @@
+;; THEME
 (add-to-list 'load-path "~/.emacs.d/themes/")
 (load "dark-krystal-theme")
 
+
+;; KEYBINDINGS
 (global-set-key (kbd "C-<f8>") (lambda () (interactive) (whitespace-cleanup) (message "WHITESPACE CLEANUP")))
 (global-set-key (kbd "M-[ h") 'beginning-of-line)
 (global-set-key (kbd "M-[ f") 'end-of-line)
@@ -9,6 +12,8 @@
 (global-set-key (kbd "C-M-[") 'hs-hide-block)
 (global-set-key (kbd "C-M-]") 'hs-show-block)
 
+
+;; EMACS FUNCTIONS
 (global-auto-revert-mode 1)
 
 (global-linum-mode t)
@@ -28,5 +33,7 @@
 
 ;; (add-hook 'hs-minor-mode-hook '(lambda () (hs-hide-all)))
 
+
+;; FOR LATEX MODE
 (load "auctex.el" nil t t)
 (load "preview-latex.el" nil t t)
