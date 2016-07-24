@@ -37,6 +37,3 @@
 ;; FOR LATEX MODE
 (load "auctex.el" nil t t)
 (load "preview-latex.el" nil t t)
-
-
-;; comment for the test
