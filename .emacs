@@ -1,7 +1,7 @@
 ;; THEME
 (add-to-list 'load-path "~/.emacs.d/themes/")
 (load "dark-krystal-theme")
-
+;; just for test
 
 ;; KEYBINDINGS
 (global-set-key (kbd "C-<f8>") (lambda () (interactive) (whitespace-cleanup) (message "WHITESPACE CLEANUP")))
